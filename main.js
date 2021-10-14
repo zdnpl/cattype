@@ -1,7 +1,7 @@
 window.addEventListener("load", init);
 
 //global
-let time = 5;
+let time = 3;
 let score = 0;
 let isPlaying;
 
@@ -63,7 +63,7 @@ function init() {
 function startMatch() {
   if (matchWords()) {
     isPlaying = true;
-    time = 6;
+    time = 4;
     showWord(words);
     wordInput.value = "";
     score++;
@@ -114,7 +114,7 @@ function checkStatus() {
       if (willDelete) {
         score = 0;
         startMatch();
-        time = 6;
+        time = 4;
       } else {
         console.log("else");
       }

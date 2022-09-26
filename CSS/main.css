@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background: #56a3a6;
+}
+
+.main-theme {
+  min-height: 100vh;
+}
+
+.brand-name {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  width: 50%;
+}
+
+.nav-bertema {
+  background-color: #56a3a6;
+}
+
+.wrapper {
+  color: #fff;
+  display: flex;
+  margin-top: 7%;
+}
+
+.wrapper .input-field {
+  z-index: -999;
+  opacity: 0;
+  position: absolute;
+}
+
+.wrapper .content-box {
+  padding: 13px 20px 0;
+}
+
+.time {
+  font-size: 25px;
+  color: #e3b505;
+  opacity: 0;
+}
+
+.content-box .typing-text {
+  max-height: 110px;
+  overflow-y: none;
+}
+
+.content-box .typing-text::-webkit-scrollbar {
+  width: 0px;
+}
+
+.content-box .typing-text::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.content-box .typing-text::-webkit-scrollbar-thumb {
+  background: #e3b505;
+}
+
+/* Handle on hover */
+.content-box .typing-text::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+.typing-text p {
+  font-size: 25px;
+  text-align: left;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+
+.typing-text p span {
+  position: relative;
+}
+
+.typing-text p span.correct {
+  color: #e3b505;
+}
+
+.typing-text p span.incorrect {
+  color: red;
+}
+
+.typing-text p span.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 3px;
+  opacity: 1;
+  background: #e3b505;
+}
+
+.content-box .content {
+  display: flex;
+  margin-top: 17px;
+  padding: 12px 0;
+  justify-content: space-between;
+}
+
+.content button {
+  border: none;
+  outline: none;
+  width: 105px;
+  background: #dc3545;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.1s ease;
+  color: #fff;
+  transform: scale(0.8);
+}
+
+.content button:active {
+  transform: scale(0.7);
+}
+
+.try-again {
+  margin: auto;
+}
+
+.content .result-details {
+  display: flex;
+  margin-top: 20px;
+  width: calc(100% - 50px);
+  justify-content: space-between;
+}
+
+.result-details li {
+  display: flex;
+  list-style: none;
+}
+
+.result-details li p {
+  font-size: 17px;
+}
+
+.result-details li span {
+  display: block;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.watermark {
+  color: #fff;
+}
+
+.result {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.meme-niceone {
+  border-radius: 5px;
+}
+
+#accakhir {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 4ch;
+}
+
+.tema {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 700px;
+  border-bottom-left-radius: 20px;
+  transition: 0.25s ease-in-out;
+  max-height: 245px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tema::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tema::-webkit-scrollbar-track {
+  background: #db504a;
+}
+
+/* Handle */
+.tema::-webkit-scrollbar-thumb {
+  background: #e3b505;
+}
+
+/* Handle on hover */
+.tema::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+.border-tema {
+  font-size: 17px;
+  padding: 15px;
+  padding-left: 20px;
+  background-color: #db504a;
+  color: #fff;
+}
+.border-tema-bawah {
+  padding: 10px;
+  background-color: #db504a;
+}
+.tombol-tema button {
+  background-color: #db504a;
+  padding: 5px;
+  padding-left: 20px;
+  width: 700px;
+  display: block;
+  margin: auto;
+  text-align: left;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.tombol-tema button:hover {
+  background-color: #e3b505;
+}
+
+.pilihan-tema {
+  cursor: pointer;
+}
+
+body .bubble-gum,
+.nav-bertema .bubble-gum {
+  background-color: #56a3a6;
+}
+body .kobo {
+  background-image: url("theme/kobo.png");
+}
+body .anya {
+  background-image: url("theme/anya.png");
+}
+
+.wrapper .anya {
+  color: #f1f1f1;
+}
+
+body .cliff {
+  background-image: url("theme/cliff.png");
+}
+body .abujr {
+  background-image: url("theme/abujr.png");
+}
+body .ucil {
+  background-image: url("theme/ucil.png");
+}
+body .floof {
+  background-image: url("theme/floof.png");
+}
+body .bailey {
+  background-image: url("theme/bailey.png");
+}
+body .mino {
+  background-image: url("theme/mino.png");
+}
+
+/* responsive */
+@media screen and (max-width: 675px) {
+  .container {
+    width: 100%;
+  }
+  .watermark {
+    display: none;
+  }
+}
